@@ -1,3 +1,5 @@
+// TC = O(r*c)
+
 class Solution
 {   
     public: 
