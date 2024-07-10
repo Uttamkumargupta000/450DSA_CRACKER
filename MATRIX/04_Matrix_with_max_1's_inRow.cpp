@@ -40,3 +40,34 @@ public:
 	}
 
 };
+
+
+// ---------- APPROACH 2 --------
+
+// TC = O(N*C);
+
+class Solution{
+public:
+	int rowWithMax1s(vector<vector<int> > arr, int n, int m) {
+	    // code here
+	    int rowIndex = -1;
+	    int maxi = 0;
+	    
+	    for(int i = 0; i < arr.size() ; i++){
+	        int count = 0;
+	        for(int j = 0; j < arr[i].size(); j++){
+	            if(arr[i][j] == 1){
+	                count++;
+	            }
+	        }
+	        if(count > maxi){
+	            maxi = max(count, maxi);
+	            rowIndex = i;
+	        }
+	       
+	    }
+	    return rowIndex;
+	}
+	   
+
+};
