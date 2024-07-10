@@ -16,16 +16,19 @@ class Solution
         
         while(startRow <= endRow && startCol <= endCol ){
         
+            //starting Row traversal
             for(int i = startCol; i <= endCol ; i++ ){
                 ans.push_back(matrix[startRow][i]);
             }
             startRow++;
             
+            //End col traversal 
             for(int i = startRow; i <= endRow; i++){
                 ans.push_back(matrix[i][endCol]);
             }
             endCol--;
             
+            //End row traversal 
             if(startRow <= endRow){
                 for(int i = endCol; i >= startCol ; i--){
                     ans.push_back(matrix[endRow][i]);
@@ -33,6 +36,7 @@ class Solution
                 endRow--;
             }
             
+            // Starting col traversal 
             if(startCol <= endCol){
                 for(int i = endRow; i >= startRow; i--){
                     ans.push_back(matrix[i][startCol]);
