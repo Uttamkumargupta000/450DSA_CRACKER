@@ -68,6 +68,4 @@ public:
 	    }
 	    return rowIndex;
 	}
-	   
-
 };
