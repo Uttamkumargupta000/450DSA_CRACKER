@@ -30,7 +30,7 @@ public:
 
 // ------------ APPROACH 2 OPTIMISED ONE -------------
 
-// TC = O(R* LOG (C))
+// TC = O(32 * R * LOG (C))
 
 // USING BINARY SEARCH AND UPPER BOUND STL FUNCTION
 
