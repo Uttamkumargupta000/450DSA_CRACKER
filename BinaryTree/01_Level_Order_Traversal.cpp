@@ -24,10 +24,12 @@ class Solution
             q.pop();
             ans.push_back(temp -> data);
             
+            //left part me jao
             if(temp -> left != NULL){
                 q.push(temp -> left);
             }
             
+            //right part me jao
             if(temp -> right != NULL){
                 q.push(temp -> right);
             }
