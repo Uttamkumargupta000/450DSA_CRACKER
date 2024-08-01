@@ -1,4 +1,4 @@
-//iterative  solution
+//---------  APPROACH 1  iterative  solution--------------
 
 //  TC =O(n)
 
@@ -15,7 +15,7 @@ void reverseArray(int arr[], int start, int end){
 }
 
 
-//STL USED;
+// --------- APPROACH 2 STL USED ------------------;
 
 //  TC = O(n);
 
