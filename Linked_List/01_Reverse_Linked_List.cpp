@@ -28,7 +28,7 @@ public:
 // -------------- Approach 2 using Recursion ---------------
 
 
-//  TC = O(N)
+//  TC = O(N)    SC = o(N)
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
