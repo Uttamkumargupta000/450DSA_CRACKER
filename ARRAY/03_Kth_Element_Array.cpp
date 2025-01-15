@@ -49,4 +49,15 @@ class Solution{
 };
 
 
+// --------python code ----------
 
+class Solution:
+
+    def kthSmallest(self, arr,k):
+        
+        if not arr:
+            return None
+            
+        a = sorted(arr);
+        
+        return a[k-1];

@@ -43,3 +43,12 @@ void reverseArray(int arr[], int start, int end){
     reverseArray(arr, start++, end--);
 
 }
+
+
+//python code 
+
+class Solution:
+    def reverseArray(self, arr):
+        
+        arr.reverse();
+        
