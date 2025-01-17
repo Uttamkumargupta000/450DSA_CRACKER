@@ -4,33 +4,27 @@
 
 class Solution {
   public:
-
-    // Should return true if there exists a triplet in the
-    // array arr[] which sums to x. Otherwise false
-    bool find3Numbers(int arr[], int n, int x) {
+    bool hasTripletSum(vector<int> &arr, int target) {
+        // Your Code Here
+        int n = arr.size();
         
-        //sorting the array
-        sort(arr,arr+n);
+        sort(arr.begin(), arr.end());
         
-        for(int i = 0 ; i < n ; i++){
-            //two pointer 
-            int s = i+1;
-            int e = n-1;
+        for(int i = 0; i< n; i++){
+            int j = i + 1;
+            int k = n-1;
             
-            while( s < e){
-                //condition check 
-                if(arr[i] + arr[s] + arr[e] == x){
+            while(j < k){
+                if(arr[i]+ arr[j] + arr[k] == target){
                     return true;
-                    s++;
-                    e--;
+                    j++;
+                    k--;
                 }
-                
-                else if(arr[i] + arr[s] +arr[e] < x){
-                    s++;
+                else if(arr[i] + arr[j] + arr[k] < target){
+                    j++;
                 }
-                
                 else{
-                    e--;
+                    k--;
                 }
             }
         }
